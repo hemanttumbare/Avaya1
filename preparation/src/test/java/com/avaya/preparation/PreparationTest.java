@@ -23,7 +23,10 @@ public class PreparationTest {
 	  
 	  WebDriverManager.edgedriver().setup();
 	  
-	  WebDriver driver = new EdgeDriver();
+	  EdgeOptions opt = new EdgeOptions();
+	  opt.addArguments("-headless");
+	  
+	  WebDriver driver = new EdgeDriver(opt);
 	  
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	  driver.manage().window().maximize();
