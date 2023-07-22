@@ -24,7 +24,6 @@ public class PreparationTest {
 	  WebDriverManager.edgedriver().setup();
 	  
 	  EdgeOptions opt = new EdgeOptions();
-	  opt.addArguments("-headless");
 	  
 	  WebDriver driver = new EdgeDriver(opt);
 	  
