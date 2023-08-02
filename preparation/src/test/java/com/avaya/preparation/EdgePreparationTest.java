@@ -2,9 +2,11 @@ package com.avaya.preparation;
 
 
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.time.Duration;
 
@@ -22,14 +24,12 @@ public class EdgePreparationTest {
 	  
 	  
 	  EdgeOptions opt = new EdgeOptions();
-	  opt.getBrowserName();
-	  opt.getBrowserVersion();
 	  opt.addArguments("--no-sandbox");
 	  opt.addArguments("--disable-dev-shm-usage");
 	  try {
 	   driver = new EdgeDriver(opt);
 	  }catch(Exception e) {
-		  System.out.print("++++++++++++"+e.getMessage());
+		  System.out.print("Error message : "+e.getMessage());
 		  e.printStackTrace();
 	  }
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -38,7 +38,13 @@ public class EdgePreparationTest {
 	  driver.get("https://www.google.com/");
 	  
 	  System.out.println("Website : "+ driver.getCurrentUrl());
+	  Capabilities cap = ((RemoteWebDriver) driver).getCapabilities();
+	  
+	  System.out.println("Browser name : "+ cap.getBrowserName());
+	  System.out.println("Browser version : "+ cap.getBrowserVersion());
 	  
 	  driver.close();
+
+	  System.out.println("Browser Closed...!!!");
   }
 }
