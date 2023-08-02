@@ -26,7 +26,9 @@ public class PreparationTest {
 	  
 	  EdgeOptions opt = new EdgeOptions();
 	  opt.addArguments("--no-sandbox");
-	  
+	  opt.addArguments("disable-gpu");
+	  opt.addArguments("--disable-dev-shm-usage");
+	  opt.setExperimentalOption("useAutomationExtension", false);
 	  try {
 	   driver = new EdgeDriver(opt);
 	  }catch(Exception e) {
