@@ -22,6 +22,8 @@ public class EdgePreparationTest {
 	  
 	  
 	  EdgeOptions opt = new EdgeOptions();
+	  opt.getBrowserName();
+	  opt.getBrowserVersion();
 	  opt.addArguments("--no-sandbox");
 	  opt.addArguments("--disable-dev-shm-usage");
 	  try {
