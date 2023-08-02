@@ -18,6 +18,7 @@ public class EdgePreparationTest {
 	  WebDriver driver=null;
 	  
 	  System.setProperty("webdriver.edge.driver","/usr/bin/msedgedriver");
+	  System.setProperty("webdriver.edge.driver","/usr/bin/msedgedriver");
 	  
 	  
 	  EdgeOptions opt = new EdgeOptions();
