@@ -21,7 +21,8 @@ public class PreparationTest {
 	  
 	  System.out.println("Launching Edge Browser...!!!");
 	  
-	  WebDriverManager.edgedriver().setup();
+	  System.setProperty("webdriver.edge.driver","/usr/bin/msedgedriver");
+	  
 	  
 	  EdgeOptions opt = new EdgeOptions();
 	  
