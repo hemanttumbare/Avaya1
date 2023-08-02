@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.time.Duration;
 
-public class ChromePreparationTest {
+public class ChromePreparation {
 	
     
   @Test
