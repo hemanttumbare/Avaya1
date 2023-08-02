@@ -17,7 +17,7 @@ public class EdgePreparationTest2 {
 	
     
   @Test
-  public void LaunchBrowser() {
+  public void LaunchBrowser123() {
 	  
 	  System.out.println("Launching Edge Browser...!!!");
 	  WebDriver driver=null;
