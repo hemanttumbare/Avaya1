@@ -26,8 +26,12 @@ public class PreparationTest {
 	  EdgeOptions opt = new EdgeOptions();
 	  opt.addArguments("--no-sandbox");
 	  
+	  try {
 	  WebDriver driver = new EdgeDriver(opt);
-	  
+	  }catch(Exception e) {
+		  System.out.print("++++++++++++"+e.getMessage());
+		  e.printStackTrace();
+	  }
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	  driver.manage().window().maximize();
 	  
