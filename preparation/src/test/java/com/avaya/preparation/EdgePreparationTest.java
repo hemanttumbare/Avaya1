@@ -19,12 +19,12 @@ public class EdgePreparationTest {
 	  System.out.println("Launching Edge Browser...!!!");
 	  WebDriver driver=null;
 	  
-	 // System.setProperty("webdriver.edge.driver","/usr/bin/msedgedriver");
+	  System.setProperty("webdriver.edge.driver","/usr/bin/msedgedriver");
 	 // System.setProperty("webdriver.edge.driver","/usr/bin/msedgedriver");
 	  
 	  
 	  EdgeOptions opt = new EdgeOptions();
-	  opt.addArguments("--no-sandbox");
+	 // opt.addArguments("--no-sandbox");
 	  opt.addArguments("--disable-dev-shm-usage");
 	  try {
 	   driver = new EdgeDriver(opt);
