@@ -13,11 +13,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.time.Duration;
 
-public class EdgePreparationTest2 {
+public class EdgePreparationTest {
 	
     
   @Test
-  public void LaunchBrowser123() {
+  public void LaunchEdgeBrowser123() {
 	  
 	  System.out.println("Launching Edge Browser...!!!");
 	  WebDriver driver=null;

@@ -19,7 +19,7 @@ public class ChromePreparationTest {
   @Test
   public void LaunchBrowser() {
 	  
-	  System.out.println("Launching Edge Browser...!!!");
+	  System.out.println("Launching Chrome Browser...!!!");
 	  WebDriver driver=null;
 	  
 	  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
