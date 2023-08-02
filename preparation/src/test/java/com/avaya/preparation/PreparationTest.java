@@ -19,6 +19,7 @@ public class PreparationTest {
   public void LaunchBrowser() {
 	  
 	  System.out.println("Launching Edge Browser...!!!");
+	  WebDriver driver=null;
 	  
 	  System.setProperty("webdriver.edge.driver","/usr/bin/microsoft-edge");
 	  
@@ -27,7 +28,7 @@ public class PreparationTest {
 	  opt.addArguments("--no-sandbox");
 	  
 	  try {
-	  WebDriver driver = new EdgeDriver(opt);
+	   driver = new EdgeDriver(opt);
 	  }catch(Exception e) {
 		  System.out.print("++++++++++++"+e.getMessage());
 		  e.printStackTrace();
