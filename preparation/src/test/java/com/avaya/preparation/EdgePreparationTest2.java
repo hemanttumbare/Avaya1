@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.time.Duration;
 
-public class PreparationTest {
+public class EdgePreparationTest2 {
 	
     
   @Test
@@ -22,14 +22,14 @@ public class PreparationTest {
 	  System.out.println("Launching Edge Browser...!!!");
 	  WebDriver driver=null;
 	  
-	  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+	  System.setProperty("webdriver.edge.driver","/usr/bin/msedgedriver");
 	  
 	  
-	  ChromeOptions opt = new ChromeOptions();
+	  EdgeOptions opt = new EdgeOptions();
 	  opt.addArguments("--no-sandbox");
 	  opt.addArguments("--disable-dev-shm-usage");
 	  try {
-	   driver = new ChromeDriver(opt);
+	   driver = new EdgeDriver(opt);
 	  }catch(Exception e) {
 		  System.out.print("++++++++++++"+e.getMessage());
 		  e.printStackTrace();
