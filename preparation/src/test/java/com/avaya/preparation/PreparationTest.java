@@ -24,6 +24,7 @@ public class PreparationTest {
 	  
 	  
 	  EdgeOptions opt = new EdgeOptions();
+	  opt.addArguments("--no-sandbox");
 	  
 	  WebDriver driver = new EdgeDriver(opt);
 	  
