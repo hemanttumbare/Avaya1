@@ -4,8 +4,6 @@ package com.avaya.preparation;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -21,14 +19,14 @@ public class EdgePreparationTest {
 	  System.out.println("Launching Edge Browser...!!!");
 	  WebDriver driver=null;
 	  
-	  System.setProperty("webdriver.chrome.driver","/usr/bin/msedgedriver");
+	  System.setProperty("webdriver.edge.driver","/usr/bin/msedgedriver");
 	  
 	  
-	  ChromeOptions opt = new ChromeOptions();
+	  EdgeOptions opt = new EdgeOptions();
 	  opt.addArguments("--no-sandbox");
 	  opt.addArguments("--disable-dev-shm-usage");
 	  try {
-	   driver = new ChromeDriver(opt);
+	   driver = new EdgeDriver(opt);
 	  }catch(Exception e) {
 		  System.out.print("Error message : "+e.getMessage());
 		  e.printStackTrace();
