@@ -23,6 +23,7 @@ public class EdgePreparationTest {
 	  
 	  
 	  EdgeOptions opt = new EdgeOptions();
+	  opt.setBinary("/usr/bin/msedgedriver");
 	  opt.addArguments("--no-sandbox");
 	  opt.addArguments("--disable-dev-shm-usage");
 	  try {
