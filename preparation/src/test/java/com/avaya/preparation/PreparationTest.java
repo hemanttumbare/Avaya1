@@ -20,7 +20,7 @@ public class PreparationTest {
 	  
 	  System.out.println("Launching Edge Browser...!!!");
 	  
-	  System.setProperty("webdriver.edge.driver","/usr/bin/msedgedriver");
+	  System.setProperty("webdriver.edge.driver","/usr/bin/microsoft-edge");
 	  
 	  
 	  EdgeOptions opt = new EdgeOptions();
