@@ -4,6 +4,8 @@ package com.avaya.preparation;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -22,11 +24,11 @@ public class EdgePreparationTest {
 	  System.setProperty("webdriver.chrome.driver","/usr/bin/msedgedriver");
 	  
 	  
-	  EdgeOptions opt = new EdgeOptions();
+	  ChromeOptions opt = new ChromeOptions();
 	  opt.addArguments("--no-sandbox");
 	  opt.addArguments("--disable-dev-shm-usage");
 	  try {
-	   driver = new EdgeDriver(opt);
+	   driver = new ChromeDriver(opt);
 	  }catch(Exception e) {
 		  System.out.print("Error message : "+e.getMessage());
 		  e.printStackTrace();
