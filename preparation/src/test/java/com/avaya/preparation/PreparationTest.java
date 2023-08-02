@@ -22,7 +22,7 @@ public class PreparationTest {
 	  System.out.println("Launching Edge Browser...!!!");
 	  WebDriver driver=null;
 	  
-	  System.setProperty("webdriver.chrome.driver","/usr/bin/chromediver");
+	  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 	  
 	  
 	  ChromeOptions opt = new ChromeOptions();
