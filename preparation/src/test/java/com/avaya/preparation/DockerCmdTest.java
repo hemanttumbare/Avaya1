@@ -12,7 +12,7 @@ public class DockerCmdTest {
 	public void dockerCmd() {
 	try {
         // Specify the Docker command and its arguments
-        String[] command = {"ls", "l"};
+        String[] command = {"ls", "-l"};
         
         // Create the ProcessBuilder with the command
         ProcessBuilder processBuilder = new ProcessBuilder(command);
