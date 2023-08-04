@@ -12,7 +12,7 @@ public class DockerCmdTest {
 	public void dockerCmd() {
 	try {
         // Specify the Docker command and its arguments
-	String[] command = {"pwd","cp tsi101SMGRCA.cacert.pem /usr/local/share/ca-certificates/","update-ca-certificates"};
+	String[] command = {"pwd","cp","tsi101SMGRCA.cacert.pem","/usr/local/share/ca-certificates/","update-ca-certificates"};
     
      //   String[] command = {"update-ca-certificates"};
         
